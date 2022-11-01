@@ -1,0 +1,316 @@
+/* 웹폰트 사용시 css 첫 라인 부분에 붙여놓기*/
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+
+* {
+    margin: 0; /* 태두리 기준 바깥 여백 0으로 설정*/
+    padding: 0;/* 테두리 기준 안쪽 여백 0으로 설정*/
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font: normal 0.8em sans-serif, arial;
+    /* 보통체, 대문자 높이 기준 80% 사이즈, 글꼴 설정 */
+    background-color: rgb(135, 135, 135);
+    color: #5d5d5d;
+}
+
+
+p {
+    /*border: 1px solid red;  여백 확인용*/
+    padding: 0 0 18px 0;/* 안쪽 여백 설졍(위, 오른쪽, 아래쪽, 왼쪽) */
+    line-height: 1.7em;/* 줄간격 설정(대문자 높이 기준 170%) */
+}
+
+img{
+    /*border: 5px dotted orange;*/
+    border-radius: 5px;
+}
+
+img:hover{ /* 상태 선택자 */
+    /*border-radius: 50%;*/
+    opacity: 0.5;/* 투명도 조정, 0.0(투명), 1.0(불투명), 0.5(반투명) */
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 165%;/* 글자 사이즈 */
+    color: #2db8cd;
+    margin: 0 0 14px 0;
+
+}
+
+h2{
+    color: #b00000;
+}
+
+h5,h5,h6{
+    color: #b00000;
+    margin: 0 0 5px 0;
+}
+
+h5, h6{
+    font: italic 95% arial;
+    color: #0000a0;
+}
+
+a, a:hover{/* a 태그와 a태그에 마우스 올라간 상태에 스타일 적용*/
+    outline: none;
+    text-decoration: underline; /* 밑줄 설정 */
+    color: #a4aa04;
+}
+
+a:hover{
+    text-decoration: none; /* 밑줄 없음 */
+}
+
+ul {
+    margin: 2px 0 0 17px;
+}
+
+ul li{ /* 계층 선택자(ul 태그 안의 11태그 모두 스타일 적용) */
+    list-style-type: circle; /* 글머리 기호 설정 */
+    margin: 0 0 3px 0;
+    padding: 0 0 4px 5px;
+}
+
+#main, #logo, nav ,#site_content, footer{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main {
+    padding-bottom: 20px;
+}
+
+header{
+    background-color: transparent;
+    height: 170px;
+}
+
+#logo{
+    width: 860px;
+    position: relative;/* 상대좌표: 나머지 요소 위치에 영향을 주지 않고 자신만 움직임 */
+    height: 134px;
+}
+
+#logo h1 {
+    font-size: 300%;
+    padding: 24px 0 0 0;
+    margin: 0;
+    color: #fff;
+}
+
+#logo h2 {
+    font-size: 120%;
+    padding: 4px 0 0 0;
+    color: #a8aa94;
+}
+
+#logo h1, #logo h1 a, #logo h1 a:hover{
+    padding: 22px 0 0 0;
+    color: white;
+    text-decoration: none;
+}
+
+
+#logo h1 a:hover{
+    color: #888;
+}
+
+nav{
+    width: 900px;
+    height: 24px;
+}
+
+
+#menu{
+    float: right; /* 붕 떠서 오른쪽으로*/
+    margin: 0;
+    padding: 0;
+}
+#menu li{
+    float: left; /* 붕 떠서 왼쪽으로*/
+    list-style: none; /* 글머리 기호 안씀*/
+    padding: 0;
+    margin: 5px 2px 0 0;
+}
+
+#menu li a {
+    display: block; /* a태그는 display가 inline이라서 block으로 설정 */
+    font-size: 100%;
+    height: 20px;
+    float: left;
+    padding: 6px 20px 5px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px 2px 0 0;
+    background-color: #d7d7d7;
+    color: #000040;
+    border-radius: 10px 10px 0 0;
+}
+
+#menu li a:hover {
+    background-color: #fff;
+    color: #303030;
+}
+
+#site_content{
+    width: 858px;
+    overflow: hidden; /* 보여지는 너비보다 큰 경우 숨김 */
+    margin: 0 auto ;
+    padding: 10px 20px 20px 20px;
+    border: 15px solid #fff;
+     background: #f6f6f0 url(../images/back.png) repeat-y;
+}
+
+#site_content aside {
+    float: right;
+    width: 190px;
+    padding: 0 15px 20px 20px; 
+}
+
+#site_content aside ul {
+     width: 178px;
+     padding: 4px 0 0 0;
+     margin: 4px 0 20px 0;
+
+}
+
+#site_content aside ul li {
+     list-style: none;
+     display: block;
+     line-height: 1.7em;
+     padding: 0 0 0 25px;
+     background: transparent url(../images/check.png) no-repeat;
+}
+
+section{
+    width: 613px;
+    padding: 0;
+    text-align: left;
+}
+
+article{
+    margin: 0 0 20px 0;
+}
+
+table{
+    width: 100%; /* table 태그가 포함된 article 태그의 최대 너비 사용 */
+    height: 0;
+    margin: 7px 0 14px 0;
+}
+
+caption{
+    font-size: 16px;
+    color: #4f0000;
+    margin: 5px;
+}
+
+table tr th, table tr td{
+    background-color: #bc8e85;
+    color: #fff;
+    padding: 5px 4px;/* 안쪽 여백(위, 아래5px, 왽쪽, 오른쪽4px) */
+    text-align: center;
+}
+
+table tr td{
+    background-color: #e2e2e2;
+    color: #000040;
+    border-bottom: 1px solid white;
+}
+
+footer{
+    width: 90%;
+    margin: 0 auto ;
+    font-size: 90%;
+    height: 20px;
+    padding: 20px 0 5px 0;
+    text-align: center;
+    background-color: transparent;
+    color: #111;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;   
+}
+
+footer p {
+    line-height: 24px;
+    padding: 0;
+}
+
+video{
+    border-radius: 5%;
+}
+
+.webfont2{
+    font-family: 'Edu TAS Beginner';
+}
+
+@font-face {
+    font-family: 'Black Han Sans';
+    src: url(../images/aa.ttf);
+}
+
+.webfont3{
+    font-family: 'Black Han Sans';
+}
+
+#menu .selected a, #menu .selected a:hover{
+    background-color: white;
+    color: #000;
+}
+
+@keyframes abc{
+     0%{
+        margin-left: 50%;
+        width: 50%;
+     }
+     50%{
+        margin-left: 0%;
+        width: 50%;
+     }
+     100%{
+        margin-left: 50%;
+        width: 50%;
+     }
+}
+
+#art1{
+    animation-name: abc;
+    animation-duration: 4s;
+}
+
+#transform1 {
+    transform: rotate(90deg);/* 90도 회전 */
+}
+
+#transform2 {
+    transform: skewy(30deg);/* 기울이기 */
+}
+
+#transform3:hover {
+    transform: scale(0.5, 0.5);/* 가로 세로 크기 */
+    transform: all 1s;
+}
+
+#transform3 {
+    transition: 1s;
+}
+
+#box{
+    width: 30px;
+    height: 20px;
+    border: 1px solid blue;
+    background-color: #fe2e64;
+    transition: all 1.5s;
+}
+
+#box:hover{
+    width: 100%;
+    height: 160px;
+    background-color: #0080ff;
+    transition: all 1.5s;
+    border-radius: 20px;
+}

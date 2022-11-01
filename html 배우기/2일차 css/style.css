@@ -1,0 +1,12 @@
+/* css 주석 방법 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+
+/* 태그 선택자 */
+p {
+    background-color: rgb(234, 255, 228);
+    color: rgb(255, 0, 0);
+    font-family: 'Black Han Sans';
+}
